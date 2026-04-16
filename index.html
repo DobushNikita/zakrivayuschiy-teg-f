@@ -476,6 +476,33 @@
           </div>
         </div>
       </article>
+      <div class="section__button-save">
+        <button
+          class="button button__save"
+          type="button"
+          onclick="window['save-icon'].showModal()"
+        >
+          <svg class="floppy__icon-save" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="28" height="28">
+            <use xlink:href="./svg/floppy.svg#save-icon"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog class="dialog__window" id="save-icon">
+          <div>
+            <svg class="dialog__window__floppy-icon" viewBox="0 0 39 39" width="39" height="39">
+              <use href="./svg/floppy.svg#save-icon"></use>
+            </svg>
+            <p class="dialog__window__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button
+            class="button dialog__window__button"
+            type="button"
+            onclick="window['save-icon'].close()"
+          >
+            <span class="dialog_window__ok button__text">ок</span>
+          </button>
+        </dialog>
+      </div>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

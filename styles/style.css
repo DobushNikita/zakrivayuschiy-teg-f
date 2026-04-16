@@ -164,3 +164,93 @@ main {
   position: relative;
   overflow: hidden;
 }
+
+.section__button-save {
+  margin-block-end: 100px;
+}
+
+.floppy__icon-save {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  fill: #fff;
+  width: 2rem;
+  justify-self: center;
+}
+
+
+.button__save {
+  display: grid;
+  gap: 8px;
+  background-color: #fff;
+  padding: 15px 18px;
+  justify-self: center;
+}
+
+.button__text {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  font-family: var(--font-famaly-text-accent), fantasy;
+  font-weight: var(--font-weight-text-pixel);
+  font-size: 14px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+}
+
+.dialog__window {
+  padding: 30px clamp(2.5rem, 2.7201rem + -0.939vw, 1.875rem);
+  width: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  justify-content: center;
+}
+
+.dialog__window[open] {
+  display: grid;
+  gap: 30px;
+}
+
+.dialog__window[open]::backdrop {
+  background-color: rgb(0, 0, 0, 0.75);
+}
+
+.dialog__window div {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.dialog__window__button {
+  display: flex;
+  justify-content: center;
+  padding: 12.5px;
+}
+
+.dialog__window__text {
+  font-family: var(--font-famaly-text-accent), fantasy;
+  font-weight: var(--font-weight-text-pixel);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.dialog__window__ok {
+  text-transform: uppercase;
+}
+
+.dialog__window__floppy-icon {
+  width: 39px;
+}
+
+
+@media (width >= 1024px) {
+  .button__save {
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+  }
+
+  .floppy__icon-save {
+    width: 21px;
+  }
+}
