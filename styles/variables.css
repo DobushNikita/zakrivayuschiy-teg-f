@@ -8,7 +8,7 @@
   --font-famaly-text: 'Inter-Variable';
   --font-weight-regular: 410;
   --font-weight-bold: 715;
-  --font-famaly-text-accent: 'PressStart2P-Regular';
+  --font-famaly-text-accent: 'PressStart2P';
   --font-weight-text-pixel: 400;
   --width-block: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --contour-heart: #000000;

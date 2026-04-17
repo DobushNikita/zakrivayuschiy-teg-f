@@ -29,7 +29,7 @@
   border: 2px solid #000;
   background-color: #fff;
   box-sizing: border-box;
-  width: var(--width-block);
+  inline-size: var(--width-block);
   padding: clamp(7.5rem, 6.9159rem + 2.4922vw, 8rem) clamp(1rem, -1.3548rem + 10.0469vw, 7.6875rem);
   margin-block-start: 100px;
   margin-block-end: 100px;
@@ -57,7 +57,7 @@ main {
 }
 
 .card {
-  width: var(--width-block);
+  inline-size: var(--width-block);
   border: 2px solid #000;
   background-color: #fff;
   padding-block-end: 25px;
@@ -87,24 +87,25 @@ main {
   top: 25px;
   right: 25px;
   mix-blend-mode: hard-light;
-  color: #000000dd;
+  color: #000;
   font-size: 14px;
   font-family: var(--font-famaly-text-accent), fantasy;
   line-height: 1;
   text-transform: uppercase;
+  opacity: 0.5;
   text-shadow:
-    -1px 0 #e6e1e1a2,
-    0 1px #e6e1e1a2,
-    1px 0 #e6e1e1a2,
-    0 -1px #e6e1e1a2;
+    -1px 0 #fff,
+    0 1px #fff,
+    1px 0 #fff,
+    0 -1px #fff;
 }
 
 @supports (
-  (text-stroke: 1px #e6e1e1a2) or
-  (-webkit-text-stroke: 1px #e6e1e1a2)
+  (text-stroke: 1px #fff) or
+  (-webkit-text-stroke: 1px #fff)
 ) {
   .card__label {
-    -webkit-text-stroke: 1px #e6e1e1a2;
+    -webkit-text-stroke: 1px #fff;
     text-shadow: none;
   }
 }
@@ -156,7 +157,7 @@ main {
   font-family: var(--font-famaly-text);
   font-variation-settings: "wght" var(--font-weight-regular);
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.2;
 }
 
 .card__block-button {
@@ -182,7 +183,6 @@ main {
 
 .card__icon-button:focus-visible {
   outline: none;
-  transition: border 0.3s ease;
   border: 2px solid #000;
 }
 
