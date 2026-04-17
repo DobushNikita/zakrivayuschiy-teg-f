@@ -11,5 +11,5 @@
   --width-block: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --contour-heart: #000000;
   --sparks-color: #ff0000;
-  --animation-color: #ff0000;
+  --animation-fill-color: #ff0000;
 }

@@ -51,10 +51,3 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--font-famaly-text), sans-serif;
-    font-weight: var(--font-weight-regular);
-  }
-}
